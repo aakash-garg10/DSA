@@ -1,6 +1,7 @@
 // codestudio==>https://www.codingninjas.com/codestudio/problems/920469?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTab=1
 
 #include<bits/stdc++.h>
+using namespace std;
 vector<int> dijkstra(vector<vector<int>> &vec, int n, int edges, int source) {
     // Write your code here.
     vector<pair<int,int>>adj[n];
@@ -12,6 +13,7 @@ vector<int> dijkstra(vector<vector<int>> &vec, int n, int edges, int source) {
     
     
     // Dijkstra's algorithm begins from here
+    //priority queue on pair dataType (min heap of pair)
     priority_queue<pair<int,int>,vector<pair<int,int> >,greater<pair<int,int>>> pq;
     vector<int> distTo(n,INT_MAX);//1-indexed array for calculating shortest paths
     distTo[source] = 0;
