@@ -19,9 +19,7 @@ int lcsUtil(string& s1, string& s2, int ind1, int ind2,  vector<vector<int>>& dp
         return dp[ind1][ind2] = 1 + lcsUtil(s1,s2,ind1-1,ind2-1,dp);
     
     else 
-        return dp[ind1][ind2] = 0 + max(lcsUtil(s1,s2,ind1,ind2-1,dp),lcsUtil
-       (s1,s2,ind1-1,ind2,dp));
-   
+        return dp[ind1][ind2] = 0 + max(lcsUtil(s1,s2,ind1,ind2-1,dp),lcsUtil(s1,s2,ind1-1,ind2,dp));
 }
 
 

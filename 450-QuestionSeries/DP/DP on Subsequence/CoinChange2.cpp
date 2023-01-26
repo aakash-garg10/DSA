@@ -9,8 +9,7 @@
 
 using namespace std;
 
-long countWaysToMakeChangeUtil(vector<int>& arr,int ind, int T, vector<vector<long
->>& dp){
+long countWaysToMakeChangeUtil(vector<int>& arr,int ind, int T, vector<vector<long>>& dp){
 
     if(ind == 0){
         return (T%arr[0]==0);

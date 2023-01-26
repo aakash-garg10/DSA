@@ -1,11 +1,7 @@
-
-
 #include <bits/stdc++.h>
-
 using namespace std;
 
 void lcs(string s1, string s2) {
-
   int n = s1.size();
   int m = s2.size();
 
@@ -50,7 +46,6 @@ void lcs(string s1, string s2) {
 }
 
 int main() {
-
   string s1 = "abcde";
   string s2 = "bdgek";
 
@@ -59,9 +54,7 @@ int main() {
 }
 
 // Output: The Longest Common Subsequence is bde
-
 // Time Complexity: O(N*M)
 
 // Reason: There are two nested loops
-
 // Space Complexity: O(N*M)

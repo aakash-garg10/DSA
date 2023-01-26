@@ -1,5 +1,5 @@
-//MIN HEAP ==> priority_queue < int, vector<int>, greater<int>> pq
 //MAX HEAP ==> priority_queue < int, vector<int>, less<int>> pq   OR  priority_queue<int> pq;
+//MIN HEAP ==> priority_queue < int, vector<int>, greater<int>> pq
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -10,12 +10,9 @@ using namespace std;
 
 int cutRodUtil(vector<int>& price, int ind, int N, vector<vector<int>>& dp){
 
-    if(ind == 0){
-        return N*price[0];
-    }
-    
-    if(dp[ind][N]!=-1)
-        return dp[ind][N];
+    if(ind == 0)    return N*price[0];
+        
+    if(dp[ind][N]!=-1)  return dp[ind][N];
         
     int notTaken = 0 + cutRodUtil(price,ind-1,N,dp);
     
@@ -27,19 +24,14 @@ int cutRodUtil(vector<int>& price, int ind, int N, vector<vector<int>>& dp){
     return dp[ind][N] = max(notTaken,taken);
 }
 
-
 int cutRod(vector<int>& price,int N) {
-
     vector<vector<int>> dp(N,vector<int>(N+1,-1));
     return cutRodUtil(price,N-1,N,dp);
 }
 
 int main() {
-
   vector<int> price = {2,5,7,8,10};
-  
   int n = price.size();
-                                 
   cout<<"The Maximum price generated is "<<cutRod(price,n);
 }
 

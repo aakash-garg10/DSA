@@ -29,7 +29,7 @@ int lcs(string s1, string s2) {
     
     return dp[n][m];
 }
-
+//THIS IS THE ONLY DIFFERENCE
 int longestPalindromeSubsequence(string s){
     string t = s;
     reverse(s.begin(),s.end());

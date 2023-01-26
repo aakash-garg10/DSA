@@ -7,8 +7,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int knapsackUtil(vector<int>& wt, vector<int>& val, int ind, int W, vector<vector
-<int>>& dp){
+int knapsackUtil(vector<int>& wt, vector<int>& val, int ind, int W, vector<vector<int>>& dp){
 
     if(ind == 0){
         return ((int)(W/wt[0])) * val[0];

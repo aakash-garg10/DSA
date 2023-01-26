@@ -1,30 +1,33 @@
-//fast exponentitation
+// fast exponentitation
 #include <bits/stdc++.h>
 using namespace std;
 
-int fastExpo(int a, int b ) {
-
+int fastExpo(int a, int b)
+{
     int res = 1;
 
-    while(b > 0) {
-
-        if(b&1) {
-            //odd
-            res = res*a;
+    while (b > 0)
+    {
+        if (b & 1)
+        {
+            // odd
+            res = res * a;
         }
-        b = b >> 1;
-        a = a * a; 
+        b = b >> 1;   //divide by 2
+        // cout<<"val of a "<<a<<endl;
+        a = a * a;
     }
     return res;
 }
 
-int main() {
+int main()
+{
 
-    int a,b;
+    int a, b;
     cout << "Enter the Values of a and b" << endl;
     cin >> a >> b;
 
-    cout << "Answer is: " << fastExpo(a,b) << endl;
+    cout << "Answer is: " << fastExpo(a, b) << endl;
 
     return 0;
 }

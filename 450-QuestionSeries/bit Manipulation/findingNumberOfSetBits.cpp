@@ -39,8 +39,8 @@ int countSetBitsBuiltIn(int n)
 int main()
 {
     int n = 5;
-    cout << countSetBits(n);
-    cout << countSetBitsFast(n);
+    cout << countSetBits(n)<<endl;
+    cout << countSetBitsFast(n)<<endl;
     cout << countSetBitsBuiltIn(n);
     return 0;
 }

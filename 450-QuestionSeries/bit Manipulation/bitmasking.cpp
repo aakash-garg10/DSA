@@ -1,5 +1,5 @@
 // number == > 1 0 1 0 1
-//index   == > 4 3 2 1 0
+// index  == > 4 3 2 1 0
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,7 +20,7 @@ int getBit(int n, int pos)
 
     //2nd method to get the bit
     int mask = 1 << pos;
-    int bit = (n & mask) > 0 ? 1 : 0;
+    int bit = (n & mask);    //sirf 1 hoga tabhi 1 aayega warna 0 har case mein
     return bit;
 }
 
@@ -65,7 +65,7 @@ int clearLastNBits(int n, int pos)
     // return (n & ~((1 << pos) - 1));
 
     //2nd method to clear the last n bits
-    int mask = ~((1 << pos) - 1);
+    int mask = ~((1 << pos) - 1);    //making a mask of all 0 zeroes
     return n & mask;
 } 
 
