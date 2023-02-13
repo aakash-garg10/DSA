@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// HOLD
+// function to print array
 void printArray(int arr[], int size) {
 
     cout<< " printing the array " << endl;
